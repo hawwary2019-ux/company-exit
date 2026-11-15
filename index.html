@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فرصة تنازل — وحدات بسعر العقد القديم من الشركات مباشرة</title>
+<meta name="description" content="سجّل في قائمة الانتظار لتكون أول من يعرف بالوحدات المتاحة للتنازل بسعر العقد القديم من شركات التطوير.">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF5EA;--surface:#FFFFFF;--sand:#F1E4CC;--ink:#2B1A0E;--muted:#6B5A48;--line:#E6D5B8;--gold:#B8862B;--gold-lt:#E9C46A;--clay:#D9622B;--clay-dk:#B84E1D;--sage:#3F6B5C;--card:#2B1A0E;--card-ink:#F6EBDD;--sh:0 18px 50px rgba(43,26,14,.14);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A120B;--surface:#261A10;--sand:#2F2115;--ink:#F6EBDD;--muted:#BBA88F;--line:#41301F;--gold:#E0A84B;--sage:#7FB5A2;--card:#120C07;--sh:0 18px 50px rgba(0,0,0,.45)}}
+:root[data-theme="dark"]{--bg:#1A120B;--surface:#261A10;--sand:#2F2115;--ink:#F6EBDD;--muted:#BBA88F;--line:#41301F;--gold:#E0A84B;--sage:#7FB5A2;--card:#120C07;--sh:0 18px 50px rgba(0,0,0,.45)}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{font-family:Tajawal,Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;font-size:17px}
+h1,h2,h3{font-family:Cairo,Tahoma,sans-serif;line-height:1.35}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font-family:Cairo;font-weight:900;font-size:1.35rem;display:flex;align-items:center;gap:10px}
+.logo i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--gold-lt),var(--gold));display:grid;place-items:center;color:#2B1A0E;font-style:normal;font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:Cairo;font-weight:700;border:0;border-radius:14px;padding:14px 26px;cursor:pointer;font-size:1rem;background:var(--clay);color:#fff;box-shadow:0 10px 24px rgba(217,98,43,.32);transition:background .2s,transform .2s}
+.btn:hover{background:var(--clay-dk);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn.ghost:hover{background:var(--sand)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.hero{padding:34px 0 90px;background:radial-gradient(900px 420px at 85% -10%,rgba(233,196,106,.35),transparent 70%),radial-gradient(700px 380px at 0% 100%,rgba(63,107,92,.14),transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.pill{display:inline-block;background:var(--surface);border:1px solid var(--line);color:var(--gold);font-weight:700;padding:6px 16px;border-radius:99px;font-size:.88rem;margin-bottom:22px}
+h1{font-size:clamp(2.1rem,5vw,3.5rem);font-weight:900;margin-bottom:20px}
+.lead{color:var(--muted);font-size:1.15rem;max-width:34em;margin-bottom:30px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.note{color:var(--muted);font-size:.86rem;margin-top:16px}
+.contract{background:var(--card);color:var(--card-ink);border-radius:28px;padding:30px;box-shadow:var(--sh);position:relative;border:1px solid rgba(233,196,106,.35)}
+.contract::before{content:"";position:absolute;inset:10px;border:1px dashed rgba(233,196,106,.28);border-radius:20px;pointer-events:none}
+.contract small{color:#C9B596;font-size:.82rem}
+.c-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.tag{background:rgba(233,196,106,.16);color:var(--gold-lt);padding:4px 12px;border-radius:99px;font-size:.8rem;font-weight:700}
+.price{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-top:1px solid rgba(246,235,221,.12)}
+.price b{font-family:Cairo;font-size:1.6rem}
+.price.old b{color:var(--gold-lt);font-size:2rem}
+.price.mkt b{color:#C9B596;text-decoration:line-through;text-decoration-color:var(--clay)}
+.bar{height:8px;background:rgba(246,235,221,.12);border-radius:9px;overflow:hidden;margin:6px 0 8px}
+.bar span{display:block;height:100%;width:38%;background:linear-gradient(90deg,var(--gold),var(--gold-lt));border-radius:9px;animation:grow 1.4s .3s cubic-bezier(.22,1,.36,1) both}
+@keyframes grow{from{width:0}}
+.save{margin-top:16px;background:rgba(63,107,92,.28);border-radius:14px;padding:12px 16px;color:#BFE3D3;font-weight:700;font-size:.95rem}
+.h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:900;margin-bottom:12px}
+.sub{color:var(--muted);max-width:40em;margin-bottom:40px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px;position:relative}
+.step::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--sand);color:var(--gold);font-family:Cairo;font-weight:900;display:grid;place-items:center;margin-bottom:16px}
+.step h3{font-size:1.15rem;margin-bottom:6px}
+.step p{color:var(--muted);font-size:.97rem}
+.band{background:var(--sand)}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+.why h3{font-size:1.1rem;margin-bottom:6px;color:var(--sage)}
+.why p{color:var(--muted);font-size:.97rem}
+.form-card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:34px;box-shadow:var(--sh)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-weight:700;font-size:.92rem;margin-bottom:6px}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+input:focus,select:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(184,134,43,.22)}
+.full{grid-column:1/-1}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--muted);font-weight:400}
+.check input{width:auto;margin-top:6px}
+.thanks{display:none;background:rgba(63,107,92,.14);color:var(--sage);border-radius:14px;padding:14px 18px;font-weight:700;margin-top:16px}
+.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.biz{background:var(--card);color:var(--card-ink);border-radius:30px;padding:44px}
+.biz .sub{color:#C9B596}
+.biz .form-card{background:#1E130A;border-color:rgba(233,196,106,.25);box-shadow:none}
+.biz input,.biz select{background:#150E07;color:var(--card-ink);border-color:#4A3722}
+.biz .check{color:#C9B596}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin-bottom:12px}
+summary{font-family:Cairo;font-weight:700;cursor:pointer}
+details p{color:var(--muted);margin-top:10px;font-size:.97rem}
+footer{padding:36px 0 44px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+@media(max-width:860px){section{padding:60px 0}.hero-grid,.split,.steps,.why{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.biz{padding:26px 18px}.form-card{padding:22px}}
+@media(prefers-reduced-motion:reduce){.bar span{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="logo" href="#top"><i>⌂</i><span id="brand">فرصة تنازل</span></a>
+  <a class="btn ghost" href="#join">سجّل اهتمامك</a>
+</header>
+
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="pill">قائمة انتظار مفتوحة</span>
+    <h1>وحدتك الجاية بسعر العقد القديم، من الشركة مباشرة.</h1>
+    <p class="lead">بنجمع الوحدات اللي الشركات بتعرضها للتنازل. سجّل ميزانيتك ومنطقتك، ولما وحدة تناسبك تتاح هنكلمك على واتساب قبل ما تتعرض للجميع.</p>
+    <div class="cta-row"><a class="btn" href="#join">سجّل في قائمة الانتظار</a><a class="btn ghost" href="#companies">أنا شركة تطوير</a></div>
+    <p class="note">التسجيل مجاني وبدون أي التزام.</p>
+  </div>
+  <div class="contract" aria-label="مثال توضيحي لعقد تنازل">
+    <div class="c-top"><span class="tag">مثال توضيحي</span><small>وحدة ٣ غرف — ١٨٠ م²</small></div>
+    <div class="price old"><small>سعر العقد القديم</small><b>٤٬٨٠٠٬٠٠٠ ج</b></div>
+    <div class="price mkt"><small>سعر السوق اليوم</small><b>٦٬٠٠٠٬٠٠٠ ج</b></div>
+    <small>الأقساط المسددة</small>
+    <div class="bar"><span></span></div>
+    <small>تكمّل بنفس الأقساط ونفس شروط العقد</small>
+    <div class="save">الفرق اللي بتوفره: ١٬٢٠٠٬٠٠٠ ج</div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="h2">إزاي بتشتغل؟</h2>
+  <p class="sub">ثلاث خطوات بسيطة من التسجيل لحد استلام العقد.</p>
+  <div class="steps">
+    <div class="step"><h3>سجّل طلبك</h3><p>قولنا المنطقة ونوع الوحدة وأقصى مقدم وقسط شهري تقدر عليه.</p></div>
+    <div class="step"><h3>نرشّح لك وحدة</h3><p>لما شركة تعرض وحدة مناسبة، بنبلغك على واتساب بالتفاصيل الكاملة.</p></div>
+    <div class="step"><h3>تتنازل وتكمّل</h3><p>تستلم العقد بالسعر القديم، وتكمّل الأقساط مع الشركة نفسها.</p></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <h2 class="h2">ليه من الشركات مباشرة؟</h2>
+  <p class="sub">لأن الوحدة بتيجي موثقة من مصدرها.</p>
+  <div class="why">
+    <div><h3>بيانات موثقة</h3><p>الشركة عندها العقد والمدفوعات، فالتفاصيل اللي بتشوفها هي الفعلية.</p></div>
+    <div><h3>من غير أوفر برايس</h3><p>الهدف إنك تاخد الوحدة بسعر العقد، مش بسعر مبالغ فيه من وسيط.</p></div>
+    <div><h3>أولوية للمسجلين</h3><p>اللي في القائمة بيعرفوا الأول، قبل ما الوحدة تتعرض للجميع.</p></div>
+  </div>
+</div></section>
+
+<section id="join"><div class="wrap split">
+  <div>
+    <h2 class="h2">سجّل في ٣٠ ثانية</h2>
+    <p class="sub">كل ما تكون بياناتك أدق، كل ما الترشيح يكون أنسب لك. بنستخدم بياناتك للتواصل بخصوص الوحدات بس.</p>
+  </div>
+  <form class="form-card" id="buyer" data-kind="مشتري">
+    <div class="form-grid">
+      <div><label for="b1">الاسم</label><input id="b1" name="الاسم" required autocomplete="name"></div>
+      <div><label for="b2">رقم الواتساب</label><input id="b2" name="الواتساب" type="tel" inputmode="tel" required autocomplete="tel" dir="ltr"></div>
+      <div><label for="b3">المنطقة المفضلة</label><select id="b3" name="المنطقة"><option>أي منطقة</option><option>القاهرة الجديدة</option><option>العاصمة الإدارية</option><option>الشيخ زايد وأكتوبر</option><option>مدينة المستقبل</option><option>الساحل الشمالي</option></select></div>
+      <div><label for="b4">نوع الوحدة</label><select id="b4" name="نوع الوحدة"><option>شقة</option><option>فيلا / تاون هاوس</option><option>وحدة تجارية أو إدارية</option><option>أي نوع</option></select></div>
+      <div class="full"><label for="b7">مساحة الشقة المطلوبة (م²)</label><select id="b7" name="المساحة"><option>أي مساحة</option><option>أقل من ١٠٠ م²</option><option>من ١٠٠ إلى ١٥٠ م²</option><option>من ١٥٠ إلى ٢٠٠ م²</option><option>من ٢٠٠ إلى ٣٠٠ م²</option><option>أكتر من ٣٠٠ م²</option></select></div>
+      <div><label for="b5">أقصى مقدم (جنيه)</label><input id="b5" name="أقصى مقدم" type="number" inputmode="numeric" min="0" step="10000"></div>
+      <div><label for="b6">أقصى قسط شهري (جنيه)</label><input id="b6" name="أقصى قسط شهري" type="number" inputmode="numeric" min="0" step="1000"></div>
+      <div class="full"><label class="check"><input type="checkbox" required><span>أوافق على التواصل معي بخصوص الوحدات المتاحة واستخدام بياناتي لهذا الغرض فقط.</span></label></div>
+      <div class="full"><button class="btn" type="submit" style="width:100%">أرسل طلبي على واتساب</button></div>
+    </div>
+    <div class="thanks" role="status">تم تجهيز طلبك. أكمل الإرسال من واتساب وهنتواصل معاك.</div>
+  </form>
+</div></section>
+
+<section id="companies"><div class="wrap"><div class="biz split">
+  <div>
+    <h2 class="h2">شركة تطوير وعندك وحدات للتنازل؟</h2>
+    <p class="sub">بدل ما الوحدة ترجع للمخزون أو تتلغي، نوصلها لمشترين جادين مسجلين عندنا. سيب بياناتك وهنتواصل معاك.</p>
+  </div>
+  <form class="form-card" id="biz" data-kind="شركة تطوير">
+    <div class="form-grid">
+      <div><label for="c1">اسم الشركة</label><input id="c1" name="الشركة" required></div>
+      <div><label for="c2">اسم المسؤول</label><input id="c2" name="المسؤول" required></div>
+      <div><label for="c3">رقم الواتساب</label><input id="c3" name="الواتساب" type="tel" inputmode="tel" required dir="ltr"></div>
+      <div><label for="c4">عدد الوحدات التقريبي</label><input id="c4" name="عدد الوحدات" type="number" inputmode="numeric" min="1"></div>
+      <div class="full"><label class="check"><input type="checkbox" required><span>أوافق على التواصل معي بخصوص التعاون واستخدام البيانات لهذا الغرض فقط.</span></label></div>
+      <div class="full"><button class="btn" type="submit" style="width:100%">تواصلوا معي</button></div>
+    </div>
+    <div class="thanks" role="status">تم تجهيز رسالتك. أكمل الإرسال من واتساب.</div>
+  </form>
+</div></div></section>
+
+<section class="band"><div class="wrap" style="max-width:780px">
+  <h2 class="h2">أسئلة شائعة</h2>
+  <details><summary>هل التسجيل ملزم؟</summary><p>لا. التسجيل مجاني، وانت اللي بتقرر لو الوحدة المرشحة تناسبك أو لا.</p></details>
+  <details><summary>هل بتضمنوا وحدة معينة؟</summary><p>لا. توافر الوحدات بيعتمد على اللي الشركات بتعرضه، وبنبلغك لما تظهر وحدة تطابق طلبك.</p></details>
+  <details><summary>مين بيتعامل مع الأقساط بعد التنازل؟</summary><p>الأقساط والشروط بتبقى حسب عقد الشركة. هنوضحلك كل التفاصيل قبل أي خطوة، وننصحك تراجع العقد مع محاميك.</p></details>
+  <details><summary>هل بياناتي آمنة؟</summary><p>بنستخدم بياناتك للتواصل بخصوص الوحدات فقط، ولا نشاركها مع أي جهة بدون موافقتك.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">© ٢٠٢٦ فرصة تنازل. المنصة وسيط تعريفي ولا تمثل أي شركة تطوير، والأسعار المعروضة في المثال للتوضيح فقط.</div></footer>
+
+<script>
+var SHEETS_URL="https://script.google.com/macros/s/AKfycbxPJvPwX5FE6JwTLdG-fCoQQD3LLP5ITZoa81w2KRN16GDtE_qnK7hni3sCsXhzBDFHhg/exec";
+var WA="201000000000"; /* احتياطي: واتساب لو الرابط فاضي */
+document.querySelectorAll("form").forEach(function(f){
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var data={"النوع":f.dataset.kind},lines=["طلب جديد: "+f.dataset.kind];
+    f.querySelectorAll("input[name],select[name]").forEach(function(el){
+      data[el.name]=el.value; if(el.value) lines.push(el.name+": "+el.value);
+    });
+    var btn=f.querySelector("button[type=submit]"),ok=f.querySelector(".thanks");
+    if(!SHEETS_URL){window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(lines.join("\n")),"_blank");ok.style.display="block";return;}
+    btn.disabled=true;
+    fetch(SHEETS_URL,{method:"POST",mode:"no-cors",body:JSON.stringify(data)}).then(function(){
+      ok.textContent="تم تسجيل طلبك. هنتواصل معاك على واتساب قريبًا.";ok.style.display="block";f.reset();btn.disabled=false;
+    }).catch(function(){
+      ok.textContent="حصلت مشكلة في الإرسال. حاول تاني بعد قليل.";ok.style.display="block";btn.disabled=false;
+    });
+  });
+});
+</script>
+</body>
+</html>
